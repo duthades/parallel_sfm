@@ -1,0 +1,2 @@
+/usr/bin/ar cr libcorrespondence.a  CMakeFiles/correspondence.dir/feature_matching.o CMakeFiles/correspondence.dir/matches.o CMakeFiles/correspondence.dir/nRobustViewMatching.o
+/usr/bin/ranlib libcorrespondence.a

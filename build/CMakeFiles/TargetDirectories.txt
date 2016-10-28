@@ -1,0 +1,5 @@
+/home/strawhats/Gagan/Sem_III/AAA/Project1/sfm_parallel_18Oct16 /build/src/libmv_light/libmv/correspondence/CMakeFiles/correspondence.dir
+/home/strawhats/Gagan/Sem_III/AAA/Project1/sfm_parallel_18Oct16 /build/CMakeFiles/foo.dir
+/home/strawhats/Gagan/Sem_III/AAA/Project1/sfm_parallel_18Oct16 /build/src/libmv_light/libmv/multiview/CMakeFiles/multiview.dir
+/home/strawhats/Gagan/Sem_III/AAA/Project1/sfm_parallel_18Oct16 /build/src/libmv_light/libmv/numeric/CMakeFiles/numeric.dir
+/home/strawhats/Gagan/Sem_III/AAA/Project1/sfm_parallel_18Oct16 /build/src/libmv_light/libmv/simple_pipeline/CMakeFiles/simple_pipeline.dir

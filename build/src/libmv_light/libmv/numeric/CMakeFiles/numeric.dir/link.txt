@@ -1,0 +1,2 @@
+/usr/bin/ar cr libnumeric.a  CMakeFiles/numeric.dir/numeric.o CMakeFiles/numeric.dir/poly.o
+/usr/bin/ranlib libnumeric.a
