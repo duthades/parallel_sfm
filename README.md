@@ -31,7 +31,8 @@ For example:
 cd ~/opencv
 mkdir release
 cd release
-cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=<path to oencv_contrib/modules> <path to opencv source code>
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=<path to oencv_contrib/modules> <path to opencv source code>```
+
 make -j4
 sudo make install
 ```
@@ -72,6 +73,6 @@ cd ~/<my_directory>
 git clone https://github.com/KSheth96/parallel_sfm.git
 cd <path-of-the-downloaded-folder>/build
 cmake ..
-make -jX ,where X is the number of threads of the processor
+make -jX ,where X jobs will run in parallel
 ```
 Execute `./foo  <path-of-the-downloaded-folder>/samples/data/images/dataset_files.txt 350 240 360`
