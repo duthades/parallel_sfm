@@ -12,7 +12,7 @@ The serial implementation of structure-from-motion (sfm) is borrowed from the op
 
 ## OpenCV Installation
 
-```
+```bash
 sudo apt-get install build-essential
 sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
 sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
@@ -23,22 +23,22 @@ git clone https://github.com/opencv/opencv_contrib.git
 ```
 Now, delete the sfm folder from opencv_contrib folder and then install opencv with opencv-contrib 
 
-```
+```bash
 cmake [<some optional parameters>] <path to the OpenCV source directory>
 ```
 For example:
-```
+```bash
 cd ~/opencv
 mkdir release
 cd release
 cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=<path to oencv_contrib/modules> <path to opencv source code>
 ```
-```
+```bash
 make -jX ,where X jobs will run in parallel
 sudo make install
 ```
 ## SfM Dependencies Installation
-```
+```bash
 sudo apt-get install libeigen3-dev libgflags-dev libgoogle-glog-dev
  # CMake
 sudo apt-get install cmake
@@ -69,7 +69,7 @@ make test
 sudo make install
 ```
 ## parallel_sfm Installation
-```
+```bash
 cd ~/<my_directory>
 git clone https://github.com/KSheth96/parallel_sfm.git
 cd <path-of-the-downloaded-folder>/build
