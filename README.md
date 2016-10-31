@@ -11,7 +11,7 @@ cd ~/<my_working _directory>
 git clone https://github.com/opencv/opencv.git
 git clone https://github.com/opencv/opencv_contrib.git
 ```
-Now, delete the sfm folder from opencv_contrib folder.
+Now, delete the sfm folder from opencv_contrib folder and then install opencv with opencv-contrib 
 
 ```
 cmake [<some optional parameters>] <path to the OpenCV source directory>
@@ -31,7 +31,8 @@ sudo apt-get install libeigen3-dev libgflags-dev libgoogle-glog-dev
  # CMake
 sudo apt-get install cmake
 # google-glog + gflags
-sudo apt-get install libgoogle-glog-dev
+sudo apt-get install libgoogle-glog-devhttps://github.com/opencv/opencv.git
+
 # BLAS & LAPACK
 sudo apt-get install libatlas-base-dev
 # Eigen3
@@ -55,3 +56,12 @@ make -j4
 make test
 sudo make install
 ```
+## parallel_Sfm Installation
+```
+cd ~/<my_directory>
+git clone https://github.com/KSheth96/parallel_sfm.git
+cd <path-of-the-downloaded-folder>/build
+cmake ..
+make -jX ,where X is the number of threads of the processor
+```
+Execute `./foo  <path-of-the-downloaded-folder>/samples/data/images/dataset_files.txt 350 240 360`
