@@ -64,7 +64,7 @@ git clone https://ceres-solver.googlesource.com/ceres-solver
 cd ceres-solver
 mkdir build && cd build
 cmake ..
-make -j4
+make -jX #where X jobs will run in parallel
 make test
 sudo make install
 ```
