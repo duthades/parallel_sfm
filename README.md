@@ -9,15 +9,24 @@
  
 cd ~/<my_working _directory>
 git clone https://github.com/opencv/opencv.git
+git clone https://github.com/opencv/opencv_contrib.git
+```
+Now, delete the sfm folder from opencv_contrib folder.
 
+```
 cmake [<some optional parameters>] <path to the OpenCV source directory>
-
+```
+For example:
+```
 cd ~/opencv
 mkdir release
 cd release
-cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local .. <path to opencv source code>
-
-make
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=<path to oencv_contrib/modules> <path to opencv source code>
+make -j4
 sudo make install
+```
+## SfM dependencies
+```
+sudo apt-get install libeigen3-dev libgflags-dev libgoogle-glog-dev
 
-## Dependenci
+```
