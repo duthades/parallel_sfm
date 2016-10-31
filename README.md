@@ -34,7 +34,7 @@ cd release
 cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=<path to oencv_contrib/modules> <path to opencv source code>
 ```
 ```
-make -j4
+make -jX ,where X jobs will run in parallel
 sudo make install
 ```
 ## SfM Dependencies Installation
