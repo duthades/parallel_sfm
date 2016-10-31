@@ -36,7 +36,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_E
 make -j4
 sudo make install
 ```
-## SfM dependencies
+## SfM Dependencies Installation
 ```
 sudo apt-get install libeigen3-dev libgflags-dev libgoogle-glog-dev
  # CMake
@@ -74,5 +74,6 @@ git clone https://github.com/KSheth96/parallel_sfm.git
 cd <path-of-the-downloaded-folder>/build
 cmake ..
 make -jX ,where X jobs will run in parallel
-```
-Execute `./foo  <path-of-the-downloaded-folder>/samples/data/images/dataset_files.txt 350 240 360`
+
+#Execute
+./foo  <path-of-the-downloaded-folder>/samples/data/images/dataset_files.txt 350 240 360
