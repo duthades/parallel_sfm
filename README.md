@@ -74,7 +74,7 @@ cd ~/<my_directory>
 git clone https://github.com/KSheth96/parallel_sfm.git
 cd <path-of-the-downloaded-folder>/build
 cmake ..
-make -jX ,where X jobs will run in parallel
+make -jX #where X jobs will run in parallel
 
 #Execute
 ./foo  <path-of-the-downloaded-folder>/samples/data/images/dataset_files.txt 350 240 360
