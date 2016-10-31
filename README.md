@@ -1,5 +1,14 @@
 # parallel_sfm
 
+Goal: Given a set of images captured from multiple views covering entire 360 degree information and camera parameters, this code will compute the scene’s 3D reconstructions.
+
+The serial implementation of structure-from-motion (sfm) is borrowed from the opencv-contrib.
+
+### Updates:
+
+1. Parallelized feature and descriptor extraction in images using OpenMP. More precisely, parallelized nRobustViewMatching::computeCrossMatch present in `parallel_sfm/src/libmv_light/libmv/correspondence/nRobustViewMatching.cc`
+
+
 ## OpenCV Installation
 
 ```
